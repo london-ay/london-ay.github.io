@@ -161,7 +161,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #d4148c;
   margin: 0 auto;
 }
 
@@ -178,7 +178,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #d4148c;
   width: 100px;
   bottom: -12px;
 }
@@ -250,7 +250,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px #ffe6f6;
   display: block;
 }
 
@@ -314,7 +314,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0078ff;
+  background: #d4148c;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -326,7 +326,7 @@ a:hover {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #298eff;
+  background: #9d0c67;
   color: #fff;
 }
 .back-to-top.active {
@@ -352,7 +352,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid #d4148c;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -500,7 +500,7 @@ a:hover {
   bottom: -6px;
   left: 0;
   width: 0;
-  background-color: #fff;
+  background-color: #d4148c;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -779,8 +779,8 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  background-color: #d4148c;
+  box-shadow: 0 0 0 10px #ffe6f6;
 }
 .service-box .service-ico {
   margin-bottom: 1rem;
@@ -1284,7 +1284,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #100f0d;
 }
 footer .copyright {
   margin-bottom: 0.3rem;
@@ -1294,4 +1294,30 @@ footer .credits {
 }
 footer .credits a {
   color: #fff;
+}
+
+.navbar a .header-social {
+  font-size: 1.5em;
+}
+.about-img {
+  text-align: right;
+}
+.about-img img {
+  max-width: 10em;
+}
+.title-center {
+  text-align: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-center:before {
+  width: 100%;
+  left: 0;
+}
+@media only screen and (max-width: 770px) {
+  .about-img,
+  .about-info {
+    text-align: center;
+  }
 }
