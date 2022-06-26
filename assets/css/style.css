@@ -867,11 +867,11 @@ a:hover {
 }
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: #d4148c;
   float: right;
 }
 .work-content .w-like a {
-  color: #0078ff;
+  color: #d4148c;
 }
 .work-content .w-like .num-like {
   font-size: 0.7rem;
@@ -1320,4 +1320,10 @@ footer .credits a {
   .about-info {
     text-align: center;
   }
+}
+.built-with {
+  color:#1B1B1B;
+  font-style: italic !important;
+  
+
 }
