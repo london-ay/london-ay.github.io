@@ -1,0 +1,184 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header img {
+   width: 30%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.beers-archive {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-evenly;
+}
+.beers-archive h2 {
+  font-size: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+.beers-archive .tagline {
+  font-size: 1rem;
+  /*margin: 0.2;*/
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font: inherit;
+  vertical-align: baseline;
+  letter-spacing: 0.2rem;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+.beers-archive .beer-item {
+  /*min-width: max-content;*/
+  flex-grow: 0;
+  width: 25%;
+  /*min-height: 30rem;*/
+  background-color: #e2e2e2;
+  margin: 1em;
+  padding: 2em 2em;
+  border-radius: 20px;
+  position: relative;
+}
+.beers-archive li img {
+  /*max-width: 100%;*/
+  width: 30%;
+}
+.beers-archive .alt-ratio img {
+  width: 60%;
+}
+.beers-archive li .image {
+  /*max-height: 40em;*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+
+}
+.beers-archive a{
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: max-content;
+  margin-top: 1em;
+}
+.logo-subheading {
+  margin-bottom: 2em;
+  
+}
+  .beers-archive-title {
+  font-weight: bolder;
+  font-size: 2em;
+  margin: 1em auto;
+  border-bottom: 1px solid gray;
+  width: max-content;
+  padding: 0 1em 0.5em;
+
+}
+.beers-archive .btn-container {
+  position: absolute;
+  width: 100%;
+  bottom: 1em;
+  left: 0;
+}
