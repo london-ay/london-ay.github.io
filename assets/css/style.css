@@ -1324,6 +1324,32 @@ footer .credits a {
 .built-with {
   color:#1B1B1B;
   font-style: italic !important;
-  
+}
 
+.about-me .read-more {
+  text-align: center;
+  display: block;
+  color: #d4148c;
+}
+.about-me .read-more i {
+  font-size: 0.7em;
+  transition: 0.3s;
+}
+.about-me .read-more i.revealed {
+  transform: rotate(90deg);
+}
+.about-me .content {
+  max-height: 6rem;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.about-me .content.revealed {
+  max-height: 40rem;
+}
+.about-me .content .hidden {
+  transition: 0.3s;
+  opacity: 0;
+}
+.about-me .content .hidden.revealed {
+  opacity: 1;
 }

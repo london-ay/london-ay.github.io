@@ -148,22 +148,25 @@
                         About me
                       </h5>
                     </div>
-                    <p class="lead">
-                      Passionate advocate of innovative technology, a quick learner 
-                      and a resourceful problem solver with a proven track record of communication 
-                      expertise and entrepreneurial perspective.
-                    </p>
-                    <p class="lead">
-                      I have been offering web services for 2 years, which has given me familiarity with most technologies in use.
-                      I have a sound grasp of <strong>Python, JavaScript, HTML, CSS, SQL, Agile concepts</strong>, project management tools such as <strong>Jira</strong>, 
-                      <strong>unit and integration testing</strong> tools, as well as excellent <strong>customer service and communication skills</strong>, 
-                      2 years of <strong>technical background</strong>, and over 5 years of total <strong>professional experience</strong>.
-                    </p>
-                    <p class="lead">
-                      Having recently polished my skillset with QA Ltd's Software Development Bootcamp and 
-                      Open University's Cisco DevNet Associate training, I am eager to get into a full-time developer position 
-                      where I can work on exciting web projects as part of a team.
-                    </p>
+                    <div class="content">
+                      <p class="lead">
+                        Passionate advocate of innovative technology, a quick learner 
+                        and a resourceful problem solver with a proven track record of communication 
+                        expertise and entrepreneurial perspective.
+                      </p>
+                      <p class="lead hidden">
+                        I have been offering web services for 2 years, which has given me familiarity with most technologies in use.
+                        I have a sound grasp of <strong>Python, JavaScript, HTML, CSS, SQL, Agile concepts</strong>, project management tools such as <strong>Jira</strong>, 
+                        <strong>unit and integration testing</strong> tools, as well as excellent <strong>customer service and communication skills</strong>, 
+                        2 years of <strong>technical background</strong>, and over 5 years of total <strong>professional experience</strong>.
+                      </p>
+                      <p class="lead hidden">
+                        Having recently polished my skillset with QA Ltd's Software Development Bootcamp and 
+                        Open University's Cisco DevNet Associate training, I am eager to get into a full-time developer position 
+                        where I can work on exciting web projects as part of a team.
+                      </p>
+                    </div>
+                    <a class="read-more" href="#">Read More <i class="fa-solid fa-chevron-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -798,6 +801,21 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script>
+    document.querySelector(".read-more").addEventListener("click", (event)=>{
+      event.preventDefault();
+      const content = document.querySelector(".about-me .content");
+      const icon = document.querySelector(".about-me .read-more i");
+      const paras = document.querySelectorAll(".about-me .content .lead");
+
+      content.classList.toggle("revealed");
+      icon.classList.toggle("revealed");
+      paras.forEach((el)=>{
+        el.classList.toggle("revealed");
+      })
+    })
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
